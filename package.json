@@ -8,7 +8,10 @@
     "type": "git",
     "url": "git://github.com/bdryanovski/dracula.git"
   },
-  "main": "bin/",
+  "main": "./lib/Dracula.js",
+  "bin" : {
+    "dracula" : "./bin/dracula"
+  }
   "engines": {
     "node": "0.5.0"
   },
