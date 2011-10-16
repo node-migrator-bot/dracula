@@ -82,8 +82,10 @@ module.exports.Dracula = (args) ->
       console.log stdout
       say "Moving screenshots", green
       if screenshots 
-        exec "mv #{test_dir}/*.png #{screenshot_dir}",trace
+        exec "mv #{test_dir}/*.png #{screenshot_dir}", (error,stdout,stderr) ->
+          if stderr 
+            say "Moving the screenshot faild ?!",red
     if stderr
-      console.log stderr
+      say stderr,red
 
 
