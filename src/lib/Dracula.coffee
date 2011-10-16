@@ -14,7 +14,7 @@ path = require 'path'
 home = process.env.HOME + '/.dracularc/'
 pwd  = process.env.PWD
 phantomjs = '/home/zero/PhantomJS/phantomjs/bin/phantomjs'
-phantomlib = './ghostbuster.coffee'
+phantomlib = __dirname + '/ghostbuster.coffee'
 
 ###
 # Predefined colors: `bold` `red` `green` `reset`
@@ -76,11 +76,14 @@ module.exports.Dracula = (args) ->
   
   test_dir = path.dirname(args[2])
   # Start testing.
+
   exec "#{phantomjs} #{phantomlib} #{screenshots} #{screenshot_x} #{screenshot_y} #{screenshot_dir} #{args[2]}", (error,stdout,stderr) ->
     if stdout
       console.log stdout
       say "Moving screenshots", green
       if screenshots 
         exec "mv #{test_dir}/*.png #{screenshot_dir}",trace
+    if stderr
+      console.log stderr
 
 
