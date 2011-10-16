@@ -1,0 +1,2 @@
+load = require('./../lib/Dracula')
+load.Dracula(process.argv)
