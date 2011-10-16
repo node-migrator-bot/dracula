@@ -1,0 +1,17 @@
+{
+  "author": "Bozhidar Dryanovski <bozhidar.dryanovski@gmail.com> (https://github.com/bdryanovski)",
+  "name": "Dracula",
+  "description": "PhantomJS testing tool based on Ghostbuster version gem.",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bdryanovski/dracula",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bdryanovski/dracula.git"
+  },
+  "main": "bin/",
+  "engines": {
+    "node": "0.5.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
