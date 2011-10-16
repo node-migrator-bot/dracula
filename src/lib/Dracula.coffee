@@ -14,7 +14,7 @@ path = require 'path'
 home = process.env.HOME + '/.dracularc/'
 pwd  = process.env.PWD
 phantomjs = '/home/zero/PhantomJS/phantomjs/bin/phantomjs'
-phantomlib = '/home/zero/Github/Dracula/lib/ghostbuster.coffee'
+phantomlib = './ghostbuster.coffee'
 
 ###
 # Predefined colors: `bold` `red` `green` `reset`
