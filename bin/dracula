@@ -1,2 +1,4 @@
-load = require('./../lib/Dracula')
+#!/usr/bin/env node
+
+var load = require('./../lib/Dracula')
 load.Dracula(process.argv)
